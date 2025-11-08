@@ -1,84 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Scrolling Nav - Start Bootstrap Template</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand fw-bold" href="#page-top">SocioJustice</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <!-- anchors must match section ids -->
+                    <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                </ul>
+                <!-- CTA to deployed app -->
+                <a class="btn btn-primary btn-sm ms-lg-3" href="https://ton-app-deploy.example.com" target="_blank"
+                    rel="noopener">
+                    Voir l’application
+                </a>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-primary bg-gradient text-white">
-            <div class="container px-4 text-center">
-                <h1 class="fw-bolder">Welcome to Scrolling Nav</h1>
-                <p class="lead">A functional Bootstrap 5 boilerplate for one page scrolling websites</p>
-                <a class="btn btn-lg btn-light" href="#about">Start scrolling!</a>
+        </div>
+    </nav>
+    <!-- Hero / Intro -->
+    <header class="masthead text-white" id="intro">
+        <div class="overlay"></div> <!-- dark gradient overlay -->
+        <div class="container px-4 text-center masthead-content">
+            <h1 class="fw-bolder display-5 mb-3">SocioJustice</h1>
+            <p class="lead mb-4">
+                Plateforme d’analyse sociologique des décisions de justice à partir des données ouvertes.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a class="btn btn-lg btn-primary" href="https://ton-app-deploy.example.com" target="_blank"
+                    rel="noopener">
+                    Ouvrir l’application
+                </a>
+                <a class="btn btn-lg btn-outline-light" href="https://youtu.be/TON_ID_VIDEO" target="_blank"
+                    rel="noopener">
+                    Voir la vidéo
+                </a>
             </div>
-        </header>
-        <!-- About section-->
-        <section id="about">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>About this page</h2>
-                        <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-                        <ul>
-                            <li>Clickable nav links that smooth scroll to page sections</li>
-                            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                        </ul>
+        </div>
+    </header>
+    <!-- About section-->
+    <section id="about" class="py-5">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-4">À propos du projet</h2>
+                    <p class="lead mb-4">
+                        SocioJustice est né d’un besoin de recherche : rendre accessibles et exploitables les décisions
+                        de justice françaises à des fins d’analyse sociologique.
+                        Le projet a débuté lors de ma formation à Holberton School, avec pour objectif de concevoir un
+                        outil de collecte, d’organisation et d’exploration des données judiciaires issues de l’API
+                        publique Judilibre.
+                    </p>
+                    <p class="text-muted mb-5">
+                        Au-delà du code, ce projet représente une expérience humaine et technique : apprendre à
+                        structurer un MVP complet, à collaborer, et à traduire un besoin académique en solution
+                        numérique.
+                    </p>
+
+                    <!-- Personal links -->
+                    <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
+                        <a class="btn btn-outline-dark btn-sm" href="https://www.linkedin.com/in/nicolas-lassouane"
+                            target="_blank">LinkedIn</a>
+                        <a class="btn btn-outline-dark btn-sm" href="https://github.com/nicolas-lassouane"
+                            target="_blank">GitHub</a>
                     </div>
+
+                    <!-- Project repo -->
+                    <a class="btn btn-primary btn-sm" href="https://github.com/nicolas-lassouane/Code-the-Court"
+                        target="_blank">
+                        Voir le dépôt GitHub du projet
+                    </a>
                 </div>
             </div>
-        </section>
-        <!-- Services section-->
-        <section class="bg-light" id="services">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Services we offer</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-                    </div>
+        </div>
+    </section>
+    <!-- Features section -->
+    <section class="bg-light" id="features">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2>Fonctionnalités clés</h2>
+                    <p class="lead">Trois usages simples pour explorer et organiser des décisions de justice.</p>
                 </div>
             </div>
-        </section>
-        <!-- Contact section-->
-        <section id="contact">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Contact us</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
-                    </div>
+
+            <div class="row gx-5 gy-5">
+                <!-- Feature 1 -->
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/feature-import.jpg" class="img-fluid rounded mb-3" alt="Import Judilibre">
+                    <h3 class="h5 fw-semibold">Import Judilibre</h3>
+                    <p class="text-muted">
+                        Récupération des décisions depuis l’API Judilibre (avec gestion des accès).
+                        Métadonnées normalisées pour un usage sociologique.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/feature-manual.jpg" class="img-fluid rounded mb-3" alt="Saisie manuelle PDF">
+                    <h3 class="h5 fw-semibold">Saisie manuelle (PDF)</h3>
+                    <p class="text-muted">
+                        Ajout d’archives papier numérisées avec champs dédiés (juridiction, date, mots-clés)
+                        pour compléter les données publiques.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/feature-search.jpg" class="img-fluid rounded mb-3" alt="Recherche et notes">
+                    <h3 class="h5 fw-semibold">Recherche & Notes</h3>
+                    <p class="text-muted">
+                        Recherche par critères et annotations internes (mots-clés, notes).
+                        Préparation à l’analyse qualitative/quantitative.
+                    </p>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4">
+            <p class="m-0 text-center text-white">Copyright &copy; 2025</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>

@@ -10837,3 +10837,88 @@ section {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
+
+/* --- Hero (masthead) --- */
+.masthead {
+  position: relative;
+  /* use your cover image */
+  background-image: url("../assets/img/hero-sociojustice.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* height tuned for desktop/tablet; no mobile focus needed here */
+  min-height: 70vh;           /* ensures presence on smaller laptop screens */
+  height: min(90vh, 900px);   /* cap at 900px, fill up to 90% viewport */
+  display: flex;
+  align-items: center;
+}
+
+/* dark gradient overlay to improve text contrast */
+.masthead .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.55) 70%);
+}
+
+/* centers content above overlay */
+.masthead .masthead-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;    /* readable line length */
+}
+
+/* optional: stronger text shadow for readability on busy photos */
+.masthead h1,
+.masthead p {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+
+/* slight spacing under fixed navbar */
+#intro { padding-top: 4.5rem; }
+@media (min-width: 992px) {
+  #intro { padding-top: 5rem; }
+}
+
+/* === SocioJustice brand (soft, lisible) === */
+:root{
+  --sj-primary: #1552a1;         /* ton bleu appli */
+  --sj-primary-hover: #1d4ed8;   /* hover */
+  --sj-bg: #f2f6fa;              /* fond gris doux "logiciel" */
+  --sj-text: #1f2937;            /* gris anthracite lisible */
+  --sj-muted: #334155;
+}
+
+/* Fond général + texte */
+body{ background: var(--sj-bg); color: var(--sj-text); }
+
+/* Bouton primaire = même bleu que ton app */
+.btn-primary{
+  background-color: var(--sj-primary);
+  border-color: var(--sj-primary);
+}
+.btn-primary:hover, .btn-primary:focus{
+  background-color: var(--sj-primary-hover);
+  border-color: var(--sj-primary-hover);
+}
+
+/* Navbar claire, sobre */
+.navbar{ background:#fff !important; }
+.navbar .navbar-brand{ color:#0f172a !important; font-weight:600; letter-spacing:.2px; }
+.navbar .nav-link{ color:var(--sj-muted) !important; }
+.navbar .nav-link:hover{ color:var(--sj-primary) !important; }
+.navbar.shadow-sm{ box-shadow: 0 1px 6px rgba(0,0,0,.06); }
+
+/* Hero: renforce le contraste, plus “pro” */
+.masthead{
+  background-image: url("../assets/img/hero-sociojustice.jpg");
+  background-size: cover; background-position: center;
+  min-height: 72vh; height: min(88vh, 880px);
+  display:flex; align-items:center; position:relative;
+}
+.masthead .overlay{
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(17,24,39,.55) 0%, rgba(17,24,39,.70) 70%);
+}
+.masthead .masthead-content{ position:relative; z-index:1; max-width: 900px; }
+.masthead h1, .masthead p{ text-shadow: 0 1px 2px rgba(0,0,0,.28); }
