@@ -1,145 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Scrolling Nav - Start Bootstrap Template</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="SocioJustice - Legal data platform for sociological research" />
+  <title>SocioJustice – Legal Data & Sociological Analysis</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <style>
+    /* Show only the selected language */
+    [data-lang="fr"] .en, [data-lang="en"] .fr { display: none; }
+  </style>
 </head>
 
-<body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-4">
-            <a class="navbar-brand fw-bold" href="#page-top">SocioJustice</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<!-- Default language = EN -->
+<body id="page-top" data-lang="en">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white" id="mainNav">
+    <div class="container px-4">
+      <a class="navbar-brand fw-bold" href="#page-top">SocioJustice</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link fr" href="#features">Fonctionnalités</a>
+            <a class="nav-link en" href="#features">Features</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="nav-link fr" href="#about">À propos</a>
+            <a class="nav-link en" href="#about">About</a>
+          </li>
+          <!-- Language toggle sits inside the navbar, after links -->
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button id="langToggle" type="button" class="btn btn-sm btn-outline-secondary">
+              FR
             </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <!-- anchors must match section ids -->
-                    <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Hero / Intro -->
-    <header class="masthead text-white" id="intro">
-        <div class="overlay"></div> <!-- dark gradient overlay -->
-        <div class="container px-4 text-center masthead-content">
-            <h1 class="fw-bolder display-5 mb-3">SocioJustice</h1>
-            <p class="lead mb-4">
-                Plateforme d’analyse sociologique des décisions de justice à partir des données ouvertes.
-            </p>
-            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a class="btn btn-lg btn-primary" href="https://code-the-court-frontend-3a9jh0442-nicolas-lassouanes-projects.vercel.app" target="_blank"
-                    rel="noopener">
-                    Ouvrir l’application
-                </a>
-                <a class="btn btn-lg btn-outline-light" href="https://youtu.be/Dpv82JBkYaE" target="_blank"
-                    rel="noopener">
-                    Voir la vidéo
-                </a>
-            </div>
-        </div>
-    </header>
-    <!-- Features section -->
-    <section class="bg-light" id="features">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <h2>Fonctionnalités clés</h2>
-                    <p class="lead">Trois usages simples pour explorer et organiser des décisions de justice.</p>
-                </div>
-            </div>
-            
-            <div class="row gx-5 gy-5">
-                <!-- Feature 1 -->
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/feature-import.jpg" class="img-fluid rounded mb-3" alt="Import Judilibre">
-                    <h3 class="h5 fw-semibold">Import Judilibre</h3>
-                    <p class="text-muted">
-                        Récupération des décisions depuis l’API Judilibre (avec gestion des accès).
-                        Métadonnées normalisées pour un usage sociologique.
-                    </p>
-                </div>
-                
-                <!-- Feature 2 -->
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/feature-manual.jpg" class="img-fluid rounded mb-3" alt="Saisie manuelle PDF">
-                    <h3 class="h5 fw-semibold">Saisie manuelle (PDF)</h3>
-                    <p class="text-muted">
-                        Ajout d’archives papier numérisées avec champs dédiés (juridiction, date, mots-clés)
-                        pour compléter les données publiques.
-                    </p>
-                </div>
-                
-                <!-- Feature 3 -->
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/feature-search.jpg" class="img-fluid rounded mb-3" alt="Recherche et notes">
-                    <h3 class="h5 fw-semibold">Recherche & Notes</h3>
-                    <p class="text-muted">
-                        Recherche par critères et annotations internes (mots-clés, notes).
-                        Préparation à l’analyse qualitative/quantitative.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About section-->
-    <section id="about" class="py-5">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="fw-bold mb-4">À propos du projet</h2>
-                    <p class="lead mb-4">
-                        SocioJustice est né d’un besoin de recherche : rendre accessibles et exploitables les décisions
-                        de justice françaises à des fins d’analyse sociologique.
-                        Le projet a débuté lors de ma formation à Holberton School, avec pour objectif de concevoir un
-                        outil de collecte, d’organisation et d’exploration des données judiciaires issues de l’API
-                        publique Judilibre.
-                    </p>
-                    <p class="text-muted mb-5">
-                        Au-delà du code, ce projet représente une expérience humaine et technique : apprendre à
-                        structurer un MVP complet, à collaborer, et à traduire un besoin académique en solution
-                        numérique.
-                    </p>
+  <!-- Hero / Intro -->
+  <header class="masthead text-white" id="intro">
+    <div class="overlay"></div>
+    <div class="container px-4 text-center masthead-content">
+      <h1 class="fw-bolder display-5 mb-3">SocioJustice</h1>
 
-                    <!-- Personal links -->
-                    <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
-                        <a class="btn btn-outline-dark btn-sm" href="https://www.linkedin.com/in/nicolas-lassouane"
-                            target="_blank">LinkedIn</a>
-                        <a class="btn btn-outline-dark btn-sm" href="https://github.com/turtle-nest"
-                            target="_blank">GitHub</a>
-                    </div>
+      <p class="lead mb-4 fr">
+        Plateforme d’analyse sociologique des décisions de justice à partir des données ouvertes.
+      </p>
+      <p class="lead mb-4 en">
+        A sociological analysis platform for French court decisions, based on open legal data.
+      </p>
 
-                    <!-- Project repo -->
-                    <a class="btn btn-primary btn-sm" href="https://github.com/turtle-nest/Code-the-Court"
-                        target="_blank">
-                        Voir le dépôt GitHub du projet
-                    </a>
-                </div>
-            </div>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a class="btn btn-lg btn-primary"
+           href="https://code-the-court-frontend-3a9jh0442-nicolas-lassouanes-projects.vercel.app"
+           target="_blank" rel="noopener">
+          <span class="fr">Ouvrir l’application</span>
+          <span class="en">Open the App</span>
+        </a>
+        <a class="btn btn-lg btn-outline-light" href="https://youtu.be/Dpv82JBkYaE" target="_blank" rel="noopener">
+          <span class="fr">Voir la vidéo</span>
+          <span class="en">Watch the video</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section class="bg-light" id="features">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="fr">Fonctionnalités clés</h2>
+          <h2 class="en">Key Features</h2>
+          <p class="lead fr">Trois usages simples pour explorer et organiser des décisions de justice.</p>
+          <p class="lead en">Three simple ways to explore and organize court decisions.</p>
         </div>
-    </section>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark">
-        <div class="container px-4">
-            <p class="m-0 text-center text-white">Copyright &copy; 2025</p>
+      </div>
+
+      <div class="row gx-5 gy-5">
+        <div class="col-md-4 text-center">
+          <img src="assets/img/feature-import.jpg" class="img-fluid rounded mb-3" alt="Import Judilibre">
+          <h3 class="h5 fw-semibold fr">Import Judilibre</h3>
+          <h3 class="h5 fw-semibold en">Judilibre Import</h3>
+          <p class="text-muted fr">
+            Récupération des décisions depuis l’API Judilibre (avec gestion des accès).
+            Métadonnées normalisées pour un usage sociologique.
+          </p>
+          <p class="text-muted en">
+            Retrieve court decisions from the Judilibre API with access management and normalized metadata for sociological analysis.
+          </p>
         </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+
+        <div class="col-md-4 text-center">
+          <img src="assets/img/feature-manual.jpg" class="img-fluid rounded mb-3" alt="Manual PDF entry">
+          <h3 class="h5 fw-semibold fr">Saisie manuelle (PDF)</h3>
+          <h3 class="h5 fw-semibold en">Manual PDF Entry</h3>
+          <p class="text-muted fr">
+            Ajout d’archives papier numérisées avec champs dédiés (juridiction, date, mots-clés) pour compléter les données publiques.
+          </p>
+          <p class="text-muted en">
+            Add scanned paper archives with dedicated fields (jurisdiction, date, keywords) to enrich public data.
+          </p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <img src="assets/img/feature-search.jpg" class="img-fluid rounded mb-3" alt="Search and Notes">
+          <h3 class="h5 fw-semibold fr">Recherche & Notes</h3>
+          <h3 class="h5 fw-semibold en">Search & Notes</h3>
+          <p class="text-muted fr">
+            Recherche par critères et annotations internes (mots-clés, notes). Préparation à l’analyse qualitative/quantitative.
+          </p>
+          <p class="text-muted en">
+            Search by criteria and add internal annotations (keywords, notes) for qualitative and quantitative analysis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-4 fr">À propos du projet</h2>
+          <h2 class="fw-bold mb-4 en">About the Project</h2>
+
+          <p class="lead mb-4 fr">
+            SocioJustice est né d’un besoin de recherche : rendre accessibles et exploitables les décisions de justice françaises à des fins d’analyse sociologique.
+          </p>
+          <p class="lead mb-4 en">
+            SocioJustice was born from a research need: to make French court decisions accessible and usable for sociological analysis.
+          </p>
+
+          <p class="text-muted mb-5 fr">
+            Le projet a débuté lors de ma formation à Holberton School, avec pour objectif de concevoir un outil de collecte, d’organisation et d’exploration des données judiciaires issues de l’API publique Judilibre.
+          </p>
+          <p class="text-muted mb-5 en">
+            The project started during my studies at Holberton School, aiming to design a tool to collect, organize and explore judicial data from the public Judilibre API.
+          </p>
+
+          <div class="d-flex justify-content-center gap-3 mb-4 flex-wrap">
+            <a class="btn btn-outline-dark btn-sm" href="https://www.linkedin.com/in/nicolas-lassouane" target="_blank">LinkedIn</a>
+            <a class="btn btn-outline-dark btn-sm" href="https://github.com/turtle-nest" target="_blank">GitHub</a>
+          </div>
+
+          <a class="btn btn-primary btn-sm" href="https://github.com/turtle-nest/Code-the-Court" target="_blank">
+            <span class="fr">Voir le dépôt GitHub du projet</span>
+            <span class="en">View the project repository</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container px-4">
+      <p class="m-0 text-center text-white">© 2025 SocioJustice</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Language toggle -->
+  <script>
+    const toggleBtn = document.getElementById('langToggle');
+    const body = document.body;
+
+    // Default is EN (see body[data-lang="en"])
+    toggleBtn.addEventListener('click', () => {
+      const isEn = body.getAttribute('data-lang') === 'en';
+      body.setAttribute('data-lang', isEn ? 'fr' : 'en');
+      toggleBtn.textContent = isEn ? 'EN' : 'FR';
+    });
+  </script>
 </body>
-
 </html>
